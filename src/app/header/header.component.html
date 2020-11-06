@@ -1,0 +1,59 @@
+<section class="container-fluid">
+  <header>Pay Mobile</header>
+  <div class="header">
+    <div class="banner">
+      <div class="banner-item">
+        <img
+          class="logo rounded-circle mr-3"
+          src="../../assets/Images/logo.png"
+          alt="logo"
+        />
+      </div>
+      <div class="banner-item">
+        <div class="banner-text">Airtel</div>
+        <div class="banner-text">
+          <span>Home</span> | <span class="banner-text">8688609755</span>
+        </div>
+      </div>
+    </div>
+    <div class="bill-details">
+      <div class="bill-col">
+        <p>$ 400.00</p>
+        <p>Monthly Average</p>
+      </div>
+      <div class="bill-col">
+        <p>$ 410.00</p>
+        <p>Last Paid</p>
+      </div>
+    </div>
+  </div>
+  <!-- /////////////////////// -->
+
+  <div class="bill-amount">
+    <div class="bill-amount-item">
+      <div>Amount</div>
+      <input type="text" value="50" />
+      <div class="plans">
+        <div *ngFor="let plan of plans">
+          <button class="plan">$ {{ plan }}</button>
+        </div>
+      </div>
+    </div>
+    <div class="bill-amount-item">
+      <div>Remarks</div>
+      <input type="text" value="Dad  Bill" />
+    </div>
+  </div>
+  <div>
+    <p class="balance-row">Available Balance $3231.00</p>
+  </div>
+  <div>
+    <p>Schedule this payment</p>
+  </div>
+  <div>
+    <p>You have left with $5000 bill limit</p>
+  </div>
+  <div class="row">
+    <button class="btn btn-danger text-center">PAY</button>
+  </div>
+</section>
